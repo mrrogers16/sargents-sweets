@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="" width-device-width, initial-scale-1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Browse our Fudge selection</h1>
+    </header>
+
+    <section id="product-list"></section> // Products will be dynamically loaded here
+
+    <footer>
+        <p>&copy; 2024 Sargent's Sweets</p>
+    </footer>
+
+    <script>
+        //Fetch products from JSON file
+        fetch('products.json')
+            .then(response => response.json())
+            .then(products => {
+                const productList = document.getElementById('product-list');
+
+                products.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.className = 'product';
+
+                    productDiv.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <p><strong>$${product.price.toFixed(2)}</strong></p>
+                    <a href="product.html?product=${product.slug}" class="product-link">View Product</a>
+                    `;
+
+                    productList.appendChild(productDiv);
+                });
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Chocolate Fudge",
+        "price": 10.00,
+        "image": "assets/chocolate_fudge.jpg",
+        "slug": "chocolate_fudge"
+    },
+    {
+        "name": "Peanut Butter Fudge",
+        "price": 12.00,
+        "image": "assets/peanut_butter_fudge.jpg",
+        "slug": "peanut_butter_fudge"
+    }
+]
