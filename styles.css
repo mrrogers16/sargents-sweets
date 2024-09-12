@@ -47,7 +47,7 @@ a {
 }
 
 a:hover {
-    color: #debe9f
+    color: #dbc2a8
 }
 
 .container {
@@ -73,4 +73,23 @@ a:hover {
     td {
         font-size: 14px;
     }
+}
+
+
+/* Title Row Styling */
+.row-1 {
+    background-color: #D4B283;
+    background-image: url('pathtotextureimage.png') /* TODO */
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 3px solid #6B4226;
+}
+
+.row-1 h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #6B4226;
+    margin: 0;
 }
