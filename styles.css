@@ -79,7 +79,7 @@ a:hover {
 /* Title Row Styling */
 .row-1 {
     background-color: #D4B283;
-    background-image: url('pathtotextureimage.png') /* TODO */
+    background-image: url('images/background_texture.png');
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
